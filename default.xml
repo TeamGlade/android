@@ -14,7 +14,7 @@
            review="gerrit.aogp-devs.com" />
 
   <remote  name="cm"
-           fetch="https://github.com/"
+           fetch="https://github.com/CyanogenMod"
            review="review.cyanogenmod.org" />
 
   <remote  name="gd"

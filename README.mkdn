@@ -33,5 +33,10 @@ $ repo sync -j#
 # = No.of jobs you want
 $ For example: repo sync -j8
 (*Note:This will consume a lot of network data)
+
+### Compiling Glade ROM ###
+$ chmod a+x build.sh
+$ ./build.sh
+# Then Follow The Script
 ```
 

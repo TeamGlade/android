@@ -582,7 +582,8 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
-  <project path="vendor/glade" name="TeamGlade/vendor_glade" remote="glade" revision="lp5.0" />
-	<copyfile src="tools/build.sh" dest="build.sh" />
+  <project path="vendor/glade" name="TeamGlade/vendor_glade" remote="glade" revision="lp5.0" >
+    <copyfile src="tools/build.sh" dest="build.sh" />
+  </project>
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" />
 </manifest>

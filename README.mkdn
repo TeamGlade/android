@@ -29,9 +29,9 @@ $ repo init -u https://github.com/TeamGlade/android.git -b lp5.0
 ### Downloading Glade Repos ###
 ```bash
 # Start by synchronising the source codes to your local drive
-$ repo sync -j#
+$ repo sync -j# -f --no-clone-bundle
 # = No.of jobs you want
-$ For example: repo sync -j8
+$ For example: repo sync -j4 -f --no-clone-bundle
 (*Note:This will consume a lot of network data)
 
 ### Compiling Glade ROM ###

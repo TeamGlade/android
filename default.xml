@@ -488,7 +488,7 @@
   <project path="packages/providers/CalendarProvider" name="CyanogenMod/android_packages_providers_CalendarProvider" />
   <project path="packages/providers/ContactsProvider" name="CyanogenMod/android_packages_providers_ContactsProvider" />
   <project path="packages/providers/DownloadProvider" name="TeamGlade/packages_providers_DownloadProvider" remote="glade" revision="lp5.0" />
-  <project path="packages/providers/MediaProvider" name="CyanogenMod/android_packages_providers_MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="TeamGlade/packages_providers_MediaProvider" remote="glade" revision="lp5.0" />
   <project path="packages/providers/PartnerBookmarksProvider" name="CyanogenMod/android_packages_providers_PartnerBookmarksProvider" />
   <project path="packages/providers/TelephonyProvider" name="CyanogenMod/android_packages_providers_TelephonyProvider" />
   <project path="packages/providers/ThemesProvider" name="CyanogenMod/android_packages_providers_ThemesProvider" />

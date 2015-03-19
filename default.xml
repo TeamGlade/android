@@ -527,6 +527,6 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
   <!-- Custom Vendor /> -->
-  <project path="vendor/glade" name="vendor_glade" remote="glade" revision="L5.1" >
+  <project path="vendor/glade" name="vendor_glade" remote="glade" revision="L5.1" />
 
 </manifest>

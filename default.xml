@@ -525,6 +525,9 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
   <project path="vendor" name="SimpleAOSP-Lollipop/platform_vendor_proprietary" remote="github" revision="L-5.1" />
-  <project path="vendor/simpleaosp" name="TeamGlade/vendor_glade" remote="github" revision="5.1" />
+
+ <!-- Glade Custom --> 
+  <project path="vendor/glade" name="TeamGlade/vendor_glade" remote="github" revision="5.1" />
+  <project path="packages/apps/OTAUpdates" name="Kryten2k35/OTAUpdates" remote="github" revision="aosp" />
 
 </manifest>

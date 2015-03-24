@@ -1,75 +1,36 @@
-SimpleAOSP Github
-===================
+# Glade Rom #
 
-Setting up Build Environment
----------------------------
-- Official build environment as per Google and AOSP [Android source page](http://source.android.com/source/index.html)
-- XDA user guides [Ubuntu 14.04 Trusty LTS](http://forum.xda-developers.com/showthread.php?t=2639611) , [Ubuntu 14.10 Utopic](http://forum.xda-developers.com/chef-central/android/howto-setup-ubuntu-14-10-utopic-unicorn-t2862442)
-- [Arch Linux](https://wiki.archlinux.org/index.php/android#Building_Android)
+### Installing Repo ###
 
-Initializing the Source
------------------------
-(Assuming you have a valid build environment setup)
-- mkdir simpleaosp
-- cd ~/simpleaosp
-- repo init -u https://github.com/SimpleAOSP-Lollipop/platform_manifest.git -b L-5.1
+```bash
+# Make a directory where Repo will be stored and add it to the path
+$ mkdir ~/bin
+$ PATH=~/bin:$PATH
 
-Sync the Source
----------------
-- repo sync -jx -f (x being however many cpu jobs)
+# Download Repo itself
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 
-Getting Ready to Build
-----------------------
-- . build/envsetup.sh
+# Make Repo executable
+$ chmod a+x ~/bin/repo
+```
 
-Choose Supported Device to Build
---------------------------------
-- lunch simpleaosp_flo-user 
-- lunch simpleaosp_flounder-user
-- lunch simpleaosp_hammerhead-user
-- lunch simpleaosp_mako-user
-- lunch simpleaosp_manta-user
-- lunch simpleaosp_shamu-user
+### Initializing Glade Repos ###
 
-Now Build it
-------------
-- mka otapackage
+```bash
+# Create a directory for the source files
+# This can be located anywhere (as long as the fs is case-sensitive)
+$ mkdir WORKSPACE
+$ cd WORKSPACE
 
-For Quick Dirty Rebuilds
-------------------------
-- cd ~/simpleaosp
-- repo sync -jx -f (x being however many cpu jobs)
-- lunch and pick the right device (refer to above for choosing right device to build)
-- mka dirty
-- mka otapackage
+# Install Repo in the created directory
+$ repo init -u https://github.com/TeamGlade/android.git -b 5.1
+```
 
-Credits
--------
-- Google for AOSP
-- Rascarlo and RastaPop
-- Altaf-Mahdi and Euphoria-OS
-- DariosF and Purity ROM
-- Paranoid Android (AOSPA)
-- AOSPAL
-- CyanogenMod
-- Dirty Unicorns
-- LiquidSmooth
-- AOKP
-- SlimROMS
-- Project D.I.S.C.O. Team
-- PartimusPrime for bootanimations
-- OmniROM
-- Lichti1901 and Terminus
-- Sykopompos
-- Team Horizon and XenonHD
-- Chet and OptiPop
-- VanirAOSP
-- PurifiedROM
-- The-Ancile-Project
-- AOD-Lollibeans
-- Android Open Development
-- Dhacker29
-- beanstown106
-- Ayysir
-- BitSyko Development
-- Others we may have missed
+### Downloading Glade Repos ###
+```bash
+# Start by synchronising the source codes to your local drive
+$ repo sync -j# -f --no-clone-bundle
+# = No.of jobs you want
+$ For example: repo sync -j4 -f --no-clone-bundle
+(*Note:This will consume a lot of network data)
+

@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
 	   review="https://android-review.googlesource.com/"
-           revision="refs/tags/android-5.1.0_r1" />
+           revision="refs/tags/android-5.1.0_r3" />
 
   <remote  name="github"
            fetch="https://github.com/" />
@@ -20,7 +20,7 @@
   <remote  name="gd"
            fetch="https://github.com/TeamGlade-Devices" />
 
-  <default revision="refs/tags/android-5.1.0_r1"
+  <default revision="refs/tags/android-5.1.0_r3"
            remote="aosp"
            sync-j="4" />
 

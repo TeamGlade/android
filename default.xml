@@ -3,7 +3,7 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
-	   review="https://android-review.googlesource.com/"
+           review="https://android-review.googlesource.com/"
            revision="refs/tags/android-5.1.0_r3" />
 
   <remote  name="github"
@@ -27,11 +27,11 @@
   <project path="build" name="TeamGlade/build" groups="pdk,tradefed" remote="github" revision="5.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="android" name="TeamGlade/android" groups="pdk,tradefed" remote="github" revision="5.1" />
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
   <project name="CyanogenMod/android_bionic" path="bionic" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -136,7 +136,6 @@
   <project path="external/flac" name="platform/external/flac" groups="pdk" />
   <project path="external/fonttools" name="platform/external/fonttools" />
   <project path="external/freetype" name="platform/external/freetype" groups="pdk" />
-  <project path="external/fsck_msdos" name="platform/external/fsck_msdos" groups="pdk-cw-fs" />
   <project path="external/gcc-demangle" name="platform/external/gcc-demangle" groups="pdk" />
   <project path="external/genext2fs" name="platform/external/genext2fs" groups="pdk-cw-fs" />
   <project path="external/giflib" name="platform/external/giflib" groups="pdk-cw-fs,qcom_msm8x26" />
@@ -193,7 +192,6 @@
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs" />
   <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
   <project path="external/libseccomp-helper" name="platform/external/libseccomp-helper" groups="pdk-cw-fs" />
-  <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
   <project path="external/libssh2" name="platform/external/libssh2" groups="pdk-cw-fs" />
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" />
@@ -361,7 +359,6 @@
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs" />
   <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
-  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
   <project path="packages/apps/Gallery2" name="CyanogenMod/android_packages_apps_Gallery2" remote="github" revision="cm-12.1" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
@@ -371,15 +368,12 @@
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
   <project path="packages/apps/LockClock" name="CyanogenMod/android_packages_apps_LockClock" remote="github" revision="cm-12.1" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" />
-  <project path="packages/apps/Music" name="platform/packages/apps/Music" />
-  <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
-  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
   <project path="packages/apps/ScreenRecorder" name="SimpleAOSP-Lollipop/platform_packages_apps_ScreenRecorder" remote="github" revision="L-5.1" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
@@ -389,7 +383,6 @@
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" />
   <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" />
-  <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
@@ -405,14 +398,6 @@
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" />
-  <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
-  <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
-  <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
-  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" />
-  <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" />
-  <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
-  <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" />
-  <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" />
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" clone-depth="1" />
   <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="pdk,darwin" />
@@ -529,6 +514,13 @@
   <project path="vendor/samsung/i9082" name="android_vendor_samsung_i9082" remote="gd" revision="5.1" />
 
   <!-- CM Specific -->
+  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" remote="github" revision="cm-12.1" />
+  <project path="external/libselinux" name="CyanogenMod/android_external_libselinux" groups="pdk" remote="github" revision="cm-12.1" />
+  <project path="external/exfat" name="CyanogenMod/android_external_exfat" remote="github" revision="cm-12.1" />
+  <project path="external/fsck_msdos" name="CyanogenMod/android_external_fsck_msdos" groups="pdk-cw-fs" remote="github" revision="cm-12.1" />
+  <project path="external/fuse" name="CyanogenMod/android_external_fuse" remote="github" revision="cm-12.1" />
+  <project path="external/pigz" name="CyanogenMod/android_external_pigz" remote="github" revision="cm-12.1" />
+  <project path="external/libtar" name="CyanogenMod/android_external_libtar" remote="github" revision="cm-12.1" />
   <project path="external/ant-wireless/ant_native" name="CyanogenMod/android_external_ant-wireless_ant_native" remote="github" revision="cm-12.1" />
   <project path="external/ant-wireless/ant_service" name="CyanogenMod/android_external_ant-wireless_ant_service" remote="github" revision="cm-12.1" />
   <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" remote="github" revision="cm-12.1" />

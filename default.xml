@@ -525,4 +525,7 @@
   <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" remote="github" revision="cm-12.1" />
   <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" remote="github" revision="cm-12.1" />
 
+  <!-- Device Specific Vendors -->
+  <project path="vendor/samsung/i9082" name="android_vendor_samsung_i9082" remote="gd" revision="5.1" />
+
 </manifest>

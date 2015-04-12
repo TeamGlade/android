@@ -528,4 +528,9 @@
   <!-- Device Specific Vendors -->
   <project path="vendor/samsung/i9082" name="android_vendor_samsung_i9082" remote="gd" revision="5.1" />
 
+  <!-- CM Specific -->
+  <project path="external/ant-wireless/ant_native" name="CyanogenMod/android_external_ant-wireless_ant_native" remote="github" revision="cm-12.1" />
+  <project path="external/ant-wireless/ant_service" name="CyanogenMod/android_external_ant-wireless_ant_service" remote="github" revision="cm-12.1" />
+  <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" remote="github" revision="cm-12.1" />
+
 </manifest>

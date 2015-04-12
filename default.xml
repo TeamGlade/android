@@ -353,7 +353,6 @@
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
-  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
   <project path="packages/apps/Camera" name="platform/packages/apps/Camera" />
@@ -372,7 +371,6 @@
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
   <project path="packages/apps/LockClock" name="CyanogenMod/android_packages_apps_LockClock" remote="github" revision="cm-12.1" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" />
-  <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
@@ -501,9 +499,11 @@
   <project path="packages/apps/InCallUI" name="TeamGlade/packages_apps_InCallUI" remote="github" revision="5.1" />
   <project path="packages/apps/PhoneCommon" name="TeamGlade/packages_apps_PhoneCommon" remote="github" revision="5.1" />
   <project path="packages/apps/Settings" name="TeamGlade/packages_apps_Settings" remote="github" revision="5.1" />
+  <project path="packages/apps/Mms" name="TeamGlade/packages_apps_Mms" remote="github" revision="5.1" />
+  <project path="packages/apps/Browser" name="TeamGlade/packages_apps_Browser" remote="github" revision="5.1" />
   <project path="packages/inputmethods/LatinIME" name="TeamGlade/packages_inputmethods_LatinIME" remote="github" revision="5.1" />
   <project path="packages/services/Telecomm" name="TeamGlade/packages_services_Telecomm" remote="github" revision="5.1" />
-  <project path="packages/services/Telephony" name="platform/packages/services/Telephony" />
+  <project path="packages/services/Telephony" name="TeamGlade/packages_services_Telephony" remote="github" revision="5.1" />
   <project path="system/core" name="TeamGlade/system_core" groups="pdk" remote="github" revision="5.1" />
   <project path="system/extras" name="TeamGlade/system_extras" groups="pdk" remote="github" revision="5.1" />
   <project name="TeamGlade/packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="github" revision="5.1" />

@@ -282,6 +282,7 @@
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
+  <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
   <project name="CyanogenMod/android_frameworks_av" path="frameworks/av" groups="pdk" remote="github" revision="cm-12.1" />
@@ -520,7 +521,6 @@
   <project path="external/fuse" name="CyanogenMod/android_external_fuse" remote="github" revision="cm-12.1" />
   <project path="external/pigz" name="CyanogenMod/android_external_pigz" remote="github" revision="cm-12.1" />
   <project path="external/libtar" name="CyanogenMod/android_external_libtar" remote="github" revision="cm-12.1" />
-  <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="external/ant-wireless/ant_native" name="CyanogenMod/android_external_ant-wireless_ant_native" remote="github" revision="cm-12.1" />
   <project path="external/ant-wireless/ant_service" name="CyanogenMod/android_external_ant-wireless_ant_service" remote="github" revision="cm-12.1" />
   <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" remote="github" revision="cm-12.1" />

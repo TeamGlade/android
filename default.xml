@@ -9,7 +9,7 @@
   <remote  name="github"
            fetch="https://github.com/" />
 
-  <remote name="glade"
+  <remote  name="glade"
            fetch="https://github.com/"
            review="gerrit.aogp-devs.com" />
 
@@ -308,7 +308,6 @@
   <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" groups="pdk-cw-fs" />
   <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs" />
-  <project name="CyanogenMod/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="cm-12.1" groups="pdk" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" />
@@ -511,6 +510,7 @@
   <project path="vendor/glade" name="TeamGlade/vendor_glade" remote="github" revision="5.1" />
   <project path="packages/apps/OTAUpdates" name="Kryten2k35/OTAUpdates" remote="github" revision="aosp" />
   <project path="packages/apps/ScreenRecorder" name="TeamGlade/packages_apps_ScreenRecorder" remote="github" revision="5.1" />
+  <project name="TeamGlade/frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="5.1" />
 
   <!-- Device Specific -->
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-12.1" />

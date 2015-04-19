@@ -396,7 +396,6 @@
   <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" groups="pdk-cw-fs" />
   <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" groups="pdk-cw-fs" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
-  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs" />
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
@@ -511,6 +510,7 @@
   <project path="packages/apps/OTAUpdates" name="Kryten2k35/OTAUpdates" remote="github" revision="aosp" />
   <project path="packages/apps/ScreenRecorder" name="TeamGlade/packages_apps_ScreenRecorder" remote="github" revision="5.1" />
   <project name="TeamGlade/frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="5.1" />
+  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
 
   <!-- Device Specific -->
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-12.1" />

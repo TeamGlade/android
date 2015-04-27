@@ -10,11 +10,12 @@
            fetch="https://github.com/" />
 
   <remote  name="glade"
-           fetch="https://github.com/"
-           review="gerrit.aogp-devs.com" />
+           fetch="https://github.com/TeamGlade/"
+           review="gerrit.aogp-devs.com"
+           revision="5.1-caf" />
 
   <remote  name="cm"
-           fetch="https://github.com"
+           fetch="https://github.com/"
            review="review.cyanogenmod.org" />
 
   <remote  name="gd"
@@ -24,13 +25,12 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="TeamGlade/build" groups="pdk,tradefed" remote="github" revision="5.1" >
+  <project path="build" name="TeamGlade/build" groups="pdk,tradefed" remote="glade" />
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="android" name="TeamGlade/android" groups="pdk,tradefed" remote="github" revision="5.1" />
+  <project path="android" name="TeamGlade/android" groups="pdk,tradefed" remote="github" revision="5.1-caf" />
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
-  <project name="CyanogenMod/android_bionic" path="bionic" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
@@ -70,10 +70,8 @@
   <project path="external/arduino" name="platform/external/arduino" groups="pdk-cw-fs" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs" />
-  <project name="CyanogenMod/android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
-  <project name="CyanogenMod/android_external_busybox" path="external/busybox" remote="github" revision="cm-12.1" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" />
@@ -121,7 +119,6 @@
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,tradefed" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs" />
-  <project name="CyanogenMod/android_external_e2fsprogs" path="external/e2fsprogs" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,tradefed" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs" />
@@ -168,7 +165,6 @@
   <project path="external/jhead" name="platform/external/jhead" groups="pdk" />
   <project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed" />
   <project path="external/jmdns" name="platform/external/jmdns" groups="pdk-cw-fs" />
-  <project name="CyanogenMod/android_external_jpeg" path="external/jpeg" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="external/jsilver" name="platform/external/jsilver" groups="pdk-cw-fs,tradefed" />
   <project path="external/jsmn" name="platform/external/jsmn" groups="pdk" />
   <project path="external/jsoncpp" name="platform/external/jsoncpp" groups="pdk-cw-fs" />
@@ -254,9 +250,7 @@
   <project path="external/robolectric" name="platform/external/robolectric" groups="pdk-cw-fs" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
-  <project name="CyanogenMod/android_external_sepolicy" path="external/sepolicy" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" />
-  <project name="CyanogenMod/android_external_skia" path="external/skia" groups="pdk-cw-fs,qcom_msm8x26" remote="github" revision="cm-12.1" />
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
@@ -298,7 +292,6 @@
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
-  <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" groups="pdk-cw-fs" />
   <project path="frameworks/opt/chips" name="platform/frameworks/opt/chips" groups="pdk-cw-fs" />
@@ -482,31 +475,31 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
  <!-- Glade Custom --> 
-  <project path="frameworks/base" name="TeamGlade/frameworks_base" groups="pdk-cw-fs" remote="github" revision="5.1" />
-  <project name="TeamGlade/frameworks_native" path="frameworks/native" groups="pdk" remote="github" revision="5.1" />
-  <project path="frameworks/opt/telephony" name="TeamGlade/frameworks_opt_telephony" groups="pdk" remote="github" revision="5.1" />
-  <project path="hardware/broadcom/libbt" name="TeamGlade/hardware_broadcom_libbt" remote="github" revision="5.1" groups="pdk" />
-  <project path="packages/apps/Contacts" name="TeamGlade/packages_apps_Contacts" remote="github" revision="5.1" />
-  <project path="packages/apps/ContactsCommon" name="TeamGlade/packages_apps_ContactsCommon" remote="github" revision="5.1" />
-  <project path="packages/apps/Dialer" name="TeamGlade/packages_apps_Dialer" remote="github" revision="5.1" />
-  <project path="packages/apps/InCallUI" name="TeamGlade/packages_apps_InCallUI" remote="github" revision="5.1" />
-  <project path="packages/apps/PhoneCommon" name="TeamGlade/packages_apps_PhoneCommon" remote="github" revision="5.1" />
-  <project path="packages/apps/Settings" name="TeamGlade/packages_apps_Settings" remote="github" revision="5.1" />
-  <project path="packages/apps/Mms" name="TeamGlade/packages_apps_Mms" remote="github" revision="5.1" />
-  <project path="packages/apps/Browser" name="TeamGlade/packages_apps_Browser" remote="github" revision="5.1" />
-  <project path="packages/inputmethods/LatinIME" name="TeamGlade/packages_inputmethods_LatinIME" remote="github" revision="5.1" />
-  <project path="packages/services/Telecomm" name="TeamGlade/packages_services_Telecomm" remote="github" revision="5.1" />
-  <project path="packages/services/Telephony" name="platform/packages/services/Telephony" />
-  <project path="system/core" name="TeamGlade/system_core" groups="pdk" remote="github" revision="5.1" />
-  <project path="system/extras" name="TeamGlade/system_extras" groups="pdk" remote="github" revision="5.1" />
-  <project name="TeamGlade/packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="github" revision="5.1" />
-  <project name="TeamGlade/packages_apps_BluetoothExt" path="packages/apps/BluetoothExt" remote="github" revision="5.1" />
-  <project name="TeamGlade/packages_apps_Terminal" path="packages/apps/Terminal" remote="github" revision="5.1" />
-  <project path="vendor/glade" name="TeamGlade/vendor_glade" remote="github" revision="5.1" />
-  <project path="packages/apps/OTAUpdates" name="Kryten2k35/OTAUpdates" remote="github" revision="aosp" />
-  <project path="packages/apps/ScreenRecorder" name="TeamGlade/packages_apps_ScreenRecorder" remote="github" revision="5.1" />
-  <project name="TeamGlade/frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="5.1" />
-  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs" remote="glade" />
+  <project name="frameworks_native" path="frameworks/native" groups="pdk" remote="glade" /> 
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="glade" />
+  <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="glade" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="glade" />
+  <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" remote="glade" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="glade" />
+  <project path="packages/apps/InCallUI" name="packages_apps_InCallUI" remote="glade" />
+  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="glade" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="glade" />
+  <project path="packages/apps/Mms" name="packages_apps_Mms" remote="glade" />
+  <project path="packages/apps/Browser" name="packages_apps_Browser" remote="glade" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="glade" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="glade" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="glade" />
+  <project path="system/core" name="system_core" groups="pdk" remote="glade" />
+  <project path="system/extras" name="system_extras" groups="pdk" remote="glade" />
+  <project name="packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="glade" />
+  <project name="packages_apps_BluetoothExt" path="packages/apps/BluetoothExt" remote="glade" />
+  <project name="packages_apps_Terminal" path="packages/apps/Terminal" remote="glade" />
+  <project path="vendor/glade" name="vendor_glade" remote="glade" />
+  <project path="packages/apps/ScreenRecorder" name="packages_apps_ScreenRecorder" remote="glade" />
+  <project name="frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="glade" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" />
+  <project name="bionic" path="bionic" groups="pdk" remote="glade" />
 
   <!-- Device Specific -->
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-12.1" />
@@ -528,5 +521,19 @@
   <project path="external/ant-wireless/ant_native" name="CyanogenMod/android_external_ant-wireless_ant_native" remote="github" revision="cm-12.1" />
   <project path="external/ant-wireless/ant_service" name="CyanogenMod/android_external_ant-wireless_ant_service" remote="github" revision="cm-12.1" />
   <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" groups="pdk" remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_external_busybox" path="external/busybox" remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_external_e2fsprogs" path="external/e2fsprogs" groups="pdk" remote="github" revision="cm-12.1" />
+  <project path="external/exfat" name="CyanogenMod/android_external_exfat" remote="github" revision="cm-12.1" />
+  <project path="external/fuse" name="CyanogenMod/android_external_fuse" remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_external_jpeg" path="external/jpeg" groups="pdk" remote="github" revision="cm-12.1" />
+  <project path="external/lz4" name="CyanogenMod/android_external_lz4" remote="github" revision="cm-12.1" />
+  <project path="external/ntfs-3g" name="CyanogenMod/android_external_ntfs-3g" remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_external_sepolicy" path="external/sepolicy" groups="pdk" remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_external_skia" path="external/skia" groups="pdk-cw-fs,qcom_msm8x26" remote="github" revision="cm-12.1" />
+  <project path="frameworks/opt/bluetooth" name="CyanogenMod/android_frameworks_opt_bluetooth" remote="github" revision="cm-12.1" groups="pdk-cw-fs" />
+  <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="github" revision="cm-12.1" />
+  <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="github" revision="cm-12.1" />
+
 
 </manifest>

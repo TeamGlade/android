@@ -25,7 +25,7 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="TeamGlade/build" groups="pdk,tradefed" remote="glade" >
+  <project path="build" name="build" groups="pdk,tradefed" remote="glade" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="android" name="TeamGlade/android" groups="pdk,tradefed" remote="github" revision="5.1-caf" />
@@ -496,7 +496,7 @@
   <project path="vendor/glade" name="vendor_glade" remote="glade" />
   <project path="packages/apps/ScreenRecorder" name="packages_apps_ScreenRecorder" remote="glade" />
   <project name="frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="glade" />
-  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="glade" />
   <project name="bionic" path="bionic" groups="pdk" remote="glade" />
 
   <!-- Device Specific -->

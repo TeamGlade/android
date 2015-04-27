@@ -23,7 +23,7 @@ $ mkdir WORKSPACE
 $ cd WORKSPACE
 
 # Install Repo in the created directory
-$ repo init -u https://github.com/TeamGlade/android.git -b 5.1
+$ repo init -u https://github.com/TeamGlade/android.git -b 5.1-caf
 ```
 
 ### Downloading Glade Repos ###

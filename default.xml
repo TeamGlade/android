@@ -300,7 +300,6 @@
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs" />
   <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" />
@@ -498,6 +497,7 @@
   <project name="frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="glade" />
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="glade" />
   <project name="bionic" path="bionic" groups="pdk" remote="glade" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="glade" />
 
   <!-- Device Specific -->
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-12.1" />

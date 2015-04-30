@@ -2,4 +2,4 @@
 host=gerrit.aogp-devs.com
 port=29418
 project=android.git
-defaultbranch=5.1
+defaultbranch=5.1-caf

@@ -282,7 +282,6 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
-  <project name="CyanogenMod/android_frameworks_av" path="frameworks/av" groups="pdk" remote="github" revision="cm-12.1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -475,6 +474,7 @@
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs" remote="glade" />
   <project name="frameworks_native" path="frameworks/native" groups="pdk" remote="glade" /> 
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="glade" />
+  <project name="frameworks_av" path="frameworks/av" groups="pdk" remote="glade" />
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="glade" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="glade" />
   <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" remote="glade" />

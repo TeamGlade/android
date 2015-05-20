@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project path="build" name="TeamGlade/build" remote="glade" revision="tg-3.0" groups="pdk,tradefed" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <project path="android" name="TeamGlade/android" remote="glade" revision="tg-3.0" />
+  
+  <project path="frameworks/base" name="TeamGlade/frameworks_base" remote="glade" revision="tg-3.0" />
+  <project path="packages/apps/AudioFX" name="TeamGlade/packages_apps_AudioFX" remote="glade" revision="tg-3.0" />
+  <project path="packages/apps/Calendar" name="TeamGlade/packages_apps_Calendar" remote="glade" revision="tg-3.0" />
+  <project path="packages/apps/GladeWallpapers" name="TeamGlade/packages_apps_GladeWallpapers" remote="glade" revision="tg-3.0" />
+  <project path="packages/apps/Dialer" name="TeamGlade/packages_apps_Dialer" remote="glade" revision="tg-3.0" />
+  <project path="packages/apps/Settings" name="TeamGlade/packages_apps_Settings" remote="glade" revision="tg-3.0" />
+  
+  <project path="vendor/glade" name="TeamGlade/vendor_glade" remote="glade" revision="tg-3.0" >
+    <copyfile src="tools/build.sh" dest="build.sh" />
+  </project>
+  
+</manifest>
